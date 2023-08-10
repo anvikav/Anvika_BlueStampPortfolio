@@ -33,7 +33,7 @@ My journey with assistive technology does not end with this project. I'm excited
 <img src="M1.png" alt="Milestone1" width="450"/>
 </p>
 <p align="center">
-<font size="1"> Anvika V. 2023 _First_ _Milestone_ [Photograph]. </font>
+<font size="1"> Anvika V. 2023 _First Milestone_ [Photograph]. </font>
 </p>
 
   The first step of this project was to develop a simple system that assists visually-impaired individuals navigate a space. It alerts the user of objects within a 70cm radius with either haptic or auditive feedback (a vibrating motor or buzzer). As the object gets closer to the user, the system responds with more frequent vibrating or buzzing; a toggle switch is used to change between the motor and the buzzer. Additionally, to establish a visual debugging method, the circuit has a 5mm red LED that lights up in harmony with haptic or auditive feedback. Next, I will expand this gadget to make it multi-functional, like adding a Raspberry Pi to translate text into Morse code or attaching it to a jacket to make it a usable garment.
@@ -44,7 +44,7 @@ My journey with assistive technology does not end with this project. I'm excited
 <img src="S1.png" alt="Schematic1" width="450"/>
 </p>
 <p align="center">
-<font size="1"> Anvika. 2023 _First_ _Milestone_ _Schematic_ [Tinkercad Circuit Diagram]. </font>
+<font size="1"> Anvika. 2023 _First Milestone Schematic_ [Tinkercad Circuit Diagram]. </font>
 </p>
 
 ### First Milestone Code
