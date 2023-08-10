@@ -23,7 +23,7 @@ My journey doesn't end here. I'm excited to continue my education in computer en
 </div>
 
 <p align="center">
-<img src="M1.png" alt="Milestone1" width="400"/>
+<img src="M1.png" alt="Milestone1" width="450"/>
 </p>
 <p align="center">
 <font size="1"> Anvika V. 2023 _First_ _Milestone_ [Photograph]. </font>
@@ -34,7 +34,7 @@ My journey doesn't end here. I'm excited to continue my education in computer en
 ### First Milestone Schematics
 
 <p align="center">
-<img src="S1.png" alt="Schematic1" height="400"/>
+<img src="S1.png" alt="Schematic1" width="450"/>
 </p>
 <p align="center">
 <font size="1"> Anvika. 2023 _First_ _Milestone_ _Schematic_ [Tinkercad Circuit Diagram]. </font>
@@ -86,7 +86,7 @@ My journey doesn't end here. I'm excited to continue my education in computer en
 
 ### First Milestone Bill of Materials
 
-| **Part** | **Quantity** | **Note** | **Price** | **Link** |
+| **Part** | **Quantity** | **Note** | **Unit Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | Arduino Micro | 1 | Microcontroller | $24.90 | <a href="https://www.digikey.com/en/products/detail/arduino/A000053/4486332?s=N4IgTCBcDaIIwAYCsCC0iBsHUDsAmIAugL5A"> DigiKey </a> |
 | Ultrasonic Sensor | 1 | Object Detection | $9 | <a href="https://www.amazon.com/Smraza-Ultrasonic-Distance-Mounting-Duemilanove/dp/B01JG09DCK/"> Amazon </a> |
@@ -105,7 +105,7 @@ My journey doesn't end here. I'm excited to continue my education in computer en
 </div>
 
 <p align="center">
-<img src="m21.png" alt="Milestone2" height="400"/>
+<img src="m21.png" alt="Milestone2" width="450"/>
 </p>
 <p align="center">
 <font size="1"> Anvika. 2023 _Second Milestone_ [Tinkercad Circuit Diagram]. </font>
@@ -151,7 +151,7 @@ void loop()
   Finally, I added a battery pack to my starter project:
 
 <p align="center">
-<img src="m23.png" alt="Milestone2" height="400"/>
+<img src="m23.png" alt="Milestone2" width="450"/>
 </p>
 <p align="center">
 <font size="1"> Anvika. 2023 _First Milestone with Battery_ [Photograph]. </font>
@@ -161,7 +161,7 @@ void loop()
   Before I started to work on my third milestone, I made a circuit diagram on Tinkercab for the object detection system on the jacket:
   
 <p align="center">
-<img src="s2.png" alt="Schematic2" height="400"/>
+<img src="s2.png" alt="Schematic2" width="450"/>
 </p>
 <p align="center">
 <font size="1"> Anvika. 2023 _Second Milestone Schematics_ [Tinkercad Circuit Diagram]. </font>
@@ -190,7 +190,7 @@ Sparkly? Most individuals with blindness can see very reflective objects, such a
 ### Schematics Part 3
 
 <p align="center">
-<img src="s3.png" alt="Schematic3" height="400"/>
+<img src="s3.png" alt="Schematic3" width="450"/>
 </p>
 <p align="center">
 <font size="1"> Anvika. 2023 _Third Milestone Schematics_ [Digital Drawing]. </font>
