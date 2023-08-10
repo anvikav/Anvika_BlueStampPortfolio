@@ -9,7 +9,7 @@ The smart jacket is equipped with an array of sensors that offer intuitive assis
 My journey doesn't end here. I'm excited to continue my education in computer engineering, refining my skills and expanding my horizons. I believe in the potential of technology to shape a better future and I hope this project serves as an inspiration to other young minds.
 
 <p align="center">
-<img src="IMG_7624.jpeg" alt="Headstone Image" width="400"/>
+<img src="IMG_7624.jpeg" alt="Headstone Image" width="450"/>
 </p>
 
 <!--<div align="center">
