@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # The Assistive Smart Jacket
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** | 
