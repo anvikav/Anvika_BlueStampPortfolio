@@ -2,7 +2,9 @@
 layout: default
 ---
 
-# The Assistive Smart Jacket
+# The Assistive Smart Jacket: Technology of the Future
+
+_italic_
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** | 
 |:--:|:--:|:--:|:--:|
@@ -14,7 +16,6 @@ My journey with assistive technology does not end with this project. I'm excited
 
 * * *
 
-# The Assistive Smart Jacket: Technology of the Future
 <p align="center">
 <img src="IMG_7624.jpeg" alt="Headstone Image" width="450"/>
 </p>
