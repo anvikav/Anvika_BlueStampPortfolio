@@ -1,3 +1,4 @@
+# The Assistive Smart Jacket
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** | 
 |:--:|:--:|:--:|:--:|
@@ -8,7 +9,7 @@ The smart jacket is equipped with an array of sensors that offer intuitive assis
 My journey doesn't end here. I'm excited to continue my education in computer engineering, refining my skills and expanding my horizons. I believe in the potential of technology to shape a better future and I hope this project serves as an inspiration to other young minds.
 
 <p align="center">
-<img src="IMG_7624.jpeg" alt="Headstone Image" height="400"/>
+<img src="IMG_7624.jpeg" alt="Headstone Image" width="400"/>
 </p>
 
 <!--<div align="center">
@@ -22,7 +23,7 @@ My journey doesn't end here. I'm excited to continue my education in computer en
 </div>
 
 <p align="center">
-<img src="M1.png" alt="Milestone1" width="300"/>
+<img src="M1.png" alt="Milestone1" width="400"/>
 </p>
 <p align="center">
 <font size="1"> Anvika V. 2023 _First_ _Milestone_ [Photograph]. </font>
