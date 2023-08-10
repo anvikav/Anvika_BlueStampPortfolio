@@ -2,6 +2,8 @@
 layout: default
 ---
 
+##_italic_
+
 # The Assistive Smart Jacket: Technology of the Future
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** | 
