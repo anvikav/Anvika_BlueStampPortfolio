@@ -1,10 +1,7 @@
-# Assistive Smart Jacket
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** | 
 |:--:|:--:|:--:|:--:|
 | Anvika V | Princeton Day School | Computer Engineering | Incoming Senior |
-
-Hello! My name is Anvika and I am a high school senior with a keen interest in computer engineering. This portfolio shares why I decided to develop discreet technology to assist the visually impaired, the technical details behind my project, and the invaluable lessons I've gained along the way! 
 
 The smart jacket is equipped with an array of sensors that offer intuitive assistance. From built-in object detection to real-time text-speech conversion, the jacket is designed to cater to various needs.
 
