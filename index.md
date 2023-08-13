@@ -22,7 +22,7 @@ My journey with assistive technology does not end with this project. I'm excited
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eLwhJpBoEEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>-->
   
-# First Milestone
+# Object Detection
 
 <div align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eLwhJpBoEEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -37,7 +37,7 @@ My journey with assistive technology does not end with this project. I'm excited
 
   The first step of this project was to develop a simple system that assists visually-impaired individuals navigate a space. It alerts the user of objects within a 70cm radius with either haptic or auditive feedback (a vibrating motor or buzzer). As the object gets closer to the user, the system responds with more frequent vibrating or buzzing; a toggle switch is used to change between the motor and the buzzer. Additionally, to establish a visual debugging method, the circuit has a 5mm red LED that lights up in harmony with haptic or auditive feedback. Next, I will expand this gadget to make it multi-functional, like adding a Raspberry Pi to translate text into Morse code or attaching it to a jacket to make it a usable garment.
 
-### First Milestone Schematics
+### Schematics Part 1
 
 <p align="center">
 <img src="S1.png" alt="Schematic1" width="450"/>
@@ -46,7 +46,7 @@ My journey with assistive technology does not end with this project. I'm excited
 <font size="1"> Anvika. 2023 _First Milestone Schematic_ [Tinkercad Circuit Diagram]. </font>
 </p>
 
-### First Milestone Code
+### Code
 ```c++
   const int pingTrigPin = 3; //Trigger connected to PIN 3
   const int pingEchoPin = 2; //Echo connected to PIN 2
@@ -90,7 +90,7 @@ My journey with assistive technology does not end with this project. I'm excited
   }
 ```
 
-### First Milestone Bill of Materials
+### Bill of Materials
 
 | **Part** | **Quantity** | **Note** | **Unit Price** | **Link** |
 |:--:|:--:|:--:|:--:|
@@ -104,7 +104,7 @@ My journey with assistive technology does not end with this project. I'm excited
 | Breadboard | 1 | Intial Circuit Base | $9.99 | <a href="https://www.amazon.com/EL-CP-003-Breadboard-Solderless-Distribution-Connecting/dp/B01EV6LJ7G/ref=sr_1_11?keywords=solderless+breadboard&qid=1685564152&sr=8-11%20soldering%20kit11Amazonhttps://www.amazon.com/Soldering-Iron-Kit-Temperature-Desoldering/dp/B07S61WT16/ref=sxts_b2b_sx_reorder_acb_business"> Amazon </a> |
 | Jumper Cables | 1 | Connecting Wires | $13.35 | <a href="https://www.amazon.com/QISF-Breadboard-Preformed-Anti-Static-Electronics/dp/B088WNZXFQ/ref=sr_1_6_sspa?crid=3BVYVZGBE5A3Z&keywords=boardboard+with+jumper+wires&qid=1686002634&sprefix=boardboard+with+jumper+wires%2Caps%2C83&sr=8-6-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFOWlRORjRCRUVHQTcmZW5jcnlwdGVkSWQ9QTA5Mjc5NjkxUktLUFAyVVJYRVBGJmVuY3J5cHRlZEFkSWQ9QTA5ODUyMjIyQ0IwTDM3VzIwQkFKJndpZGdldE5hbWU9c3BfbXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="> Amazon </a> |
 
-# Second Milestone
+# Text to Speech Conversion
 
 <div align="center">
 <iframe width="560" height="315" src="[https://www.youtube.com/embed/y3VAmNlER5Y](https://prezi.com/v/view/DcSKiovgZVgT32lMbmLB/)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -121,7 +121,7 @@ My journey with assistive technology does not end with this project. I'm excited
 
   The first modification I implemented started from the idea of a text-to-braille translator. I planned to use Raspberry Pi OpenCV to read text and use an Arduino Micro to control a braille display. However, with the idea of this display came a plethora of technical problems. Creating a display small enough to be portable and lightweight while still translating more than a sentence at a time into braille would require extremely small motors and sensors. Then came the development of a Morse Code translator using the same vibrating motor from the base project. 
 
-### Second Milestone Code for Morse Code Translator (Arduino)
+### Code for Morse Code Translator (Arduino)
 ```c++
 void loop() 
 {
@@ -175,7 +175,7 @@ void loop()
 
 
 
-# Final Milestone
+# Jacket Integration
 <!-- For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
