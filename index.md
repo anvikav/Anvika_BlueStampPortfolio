@@ -12,7 +12,7 @@ layout: default
 
 This smart jacket is equipped with an array of sensors that offer intuitive assistance. From built-in object detection to real-time text-speech conversion, it is designed to 
 
-My journey with assistive technology does not end with this project. I'm excited to continue my education in engineering, refining my skills and expanding my horizons. I believe in technology's capacity to mold a more promising tomorrow and I hope this project serves as an inspiration to other young minds. There are countless ways to expand on my work below and if you find yourself exploring them, reach out to me at anvikavasireddy@gmail.com! 
+My journey with assistive technology does not end with this project. I'm excited to continue my education in engineering. I believe in technology's capacity to mold a more promising tomorrow, and I hope this project serves as an inspiration to other young minds. There are countless ways to expand on my work below and if you find yourself exploring them, reach out to me at anvikavasireddy@gmail.com! 
 
 * * *
 
