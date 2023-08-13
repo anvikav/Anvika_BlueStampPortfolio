@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# The Assistive Smart Jacket: Discrete Technology
+# The Assistive Smart Jacket: Technology of The Future
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** | 
 |:--:|:--:|:--:|:--:|
