@@ -40,9 +40,11 @@ There are countless ways to expand on my work and if you find yourself exploring
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7IKxNl-OvRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
+
+
 ### Code
 
-For object detection, I measured the distance  signals from an ultrasonic sensor traveled and converted it into centimeters with the microsecondsToCentimeters() function. The vibrating motor, buzzer, and led would then flicker on and off in response as long as the wave traveled less than 70 cm. The frequency of the pulsing would increase as the object got closer.
+To find objects within a 70 cm radius of the user, I send signals from an ultrasonic sensor and measure how long they travel. From there, I convert it into centimeters with the microsecondsToCentimeters() function. The vibrating motor, buzzer, and led then flicker on and off in response; the frequency of the pulsing increases as the object got closer.
 
 ```c++
   void loop()
@@ -201,7 +203,7 @@ The final step before stitching the electronics onto the jacket was powering the
 <font size="1"> Anvika. 2023 Object Detection with Battery [Photograph]. </font>
 </p> 
 
-To start incorporating the various sensor, I followed a sketched jacket layout and roughly placed the components on top of the jacket. I repurposed an old jacket, but if I were to improve on this project, I would find a waterproof garment with a breathable fabric to avoid overheating.
+To start incorporating the various sensors, I followed a sketched jacket layout and roughly placed the components. I repurposed an old jacket, but if I were to improve on this project, I would find a waterproof garment with a breathable fabric to avoid electronics overheating.
 
 <p align="center">
 <img src="s3.png" alt="Schematic3" width="450"/>
