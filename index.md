@@ -37,19 +37,10 @@ My journey with assistive technology does not end with this project. I'm excited
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eLwhJpBoEEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-### Schematics Part 1
+### Code
 
-<p align="center">
-<img src="S1.png" alt="Schematic1" width="450"/>
-</p>
-<p align="center">
-<font size="1"> Anvika. 2023 First Milestone Schematic [Tinkercad Circuit Diagram]. </font>
-</p>
 For object detection, I measured the distance  signals from an ultrasonic sensor traveled and converted it into centimeters with the microsecondsToCentimeters() function. The vibrating motor, buzzer, and led would then flicker on and off in response as long as the wave traveled less than 70 cm. The frequency of the pulsing would increase as the object got closer.
 
-[Full Code](https://github.com/anvikav/Anvika_BlueStampPortfolio/blob/main/Project%20Code/objectDetection.ino)
-
-### Code
 ```c++
   void loop()
   {
@@ -72,13 +63,24 @@ For object detection, I measured the distance  signals from an ultrasonic sensor
   }
  
 ```
+[Full Code](https://github.com/anvikav/Anvika_BlueStampPortfolio/blob/main/Project%20Code/objectDetection.ino)
+
+
+### Schematics Part 1
+
+<p align="center">
+<img src="S1.png" alt="Schematic1" width="450"/>
+</p>
+<p align="center">
+<font size="1"> Anvika. 2023 First Milestone Schematic [Tinkercad Circuit Diagram]. </font>
+</p>
 
 ### Bill of Materials
 <font size="1"> Prices as of August 2023 </font>
 
 | **Part** | **Quantity** | **Note** | **Unit Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Arduino Micro | 1 | Microcontroller | $24.90 | <a href="https://store-usa.arduino.cc/products/arduino-nano?selectedStore=us"> Arduino Store </a> |
+| Arduino Micro | 1 | Microcontroller | $24.90 | <a href="https://store-usa.arduino.cc/products/arduino-micro?selectedStore=us"> Arduino </a> |
 | Ultrasonic Sensor | 1 | Object Detection | $3.95 | <a href="https://www.digikey.com/en/products/detail/adafruit-industries-llc/3942/9658069?utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_High%20ROAS%20Categories&utm_term=&utm_content=&gclid=Cj0KCQjwoeemBhCfARIsADR2QCvdct9ZQj4tz0uKaFE7A8b9jxVh9Svgka9okB9HelglRaPaI8nZRfUaAtbZEALw_wcB"> Digikey </a> |
 | Vibrating Motor | 1 | Haptic Feedback | $1.90 | <a href="https://www.digikey.com/en/products/detail/seeed-technology-co.,-ltd/316040001/5487672?utm_adgroup=Seeed%20Technology%20Co.%2C%20LTD.&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_DK%2BSupplier_Tier%201%20-%20Block%202&utm_term=&utm_content=Seeed%20Technology%20Co.%2C%20LTD.&gclid=Cj0KCQjwoeemBhCfARIsADR2QCtoECYhEt77AOmON02Ffdc9PCfrDuJbs5MAgV3U6VQzc4a4WhZQ-90aAk4zEALw_wcB"> DigiKey </a> |
 | Buzzer | 1 | Auditive Feedback | $.70 | <a href="https://www.amazon.com/mxuteuk-Electronic-Computers-Printers-Components/dp/B07VK1GJ9X/"> Amazon </a> |
@@ -91,22 +93,20 @@ For object detection, I measured the distance  signals from an ultrasonic sensor
 
 # Text-to-Speech Conversion
 
-<div align="center">
+<!--<div align="center">
 <iframe width="560" height="315" src="[https://www.youtube.com/embed/y3VAmNlER5Y](https://prezi.com/v/view/DcSKiovgZVgT32lMbmLB/)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+</div>-->
 
-<p align="center">
-<img src="m21.png" alt="Milestone2" width="450"/>
-</p>
-<p align="center">
-<font size="1"> Anvika. 2023 _Second Milestone_ [Tinkercad Circuit Diagram]. </font>
-</p>
+  The first modification I implemented started from the idea of a text-to-braille translator. I planned to use Raspberry Pi OpenCV to read text and then have an Arduino Micro convert it onto a homemade braille display. However, the idea of this display opened a Pandora's box of technical challenges. The display had to be small enough to be portable and lightweight, but I couldn't sacrifice the amount of text translated at a time. While researching I found professors at the University of Michigan who were developing technology that would be perfect for this project. 
 
-<!--![MilestoneTwo](MilestoneOne.png)-->
-
-  The first modification I implemented started from the idea of a text-to-braille translator. I planned to use Raspberry Pi OpenCV to read text and use an Arduino Micro to control a braille display. However, with the idea of this display came a plethora of technical problems. Creating a display small enough to be portable and lightweight while still translating more than a sentence at a time into braille would require extremely small motors and sensors. Then came the development of a Morse Code translator using the same vibrating motor from the base project. 
+[Michigan Engineering Microfluidics Braille Tablets](https://news.engin.umich.edu/2015/12/bringing-braille-back-with-better-display-technology/)
+  
+  The Braille tablets are a huge step in the right direction for assistive technology but I decided I wanted to focus on a modification someone could more readily recreate at home. So instead, I repurposed the vibrating motor from the object detection to convert text into Morse code. 
 
 ### Code for Morse Code Translator (Arduino)
+
+To translate the text, I modified a program created by Arduino Education. The section below shows how the program deciphers which letter to translate into Morse code. It starts by receiving the user-entered text character by character and then decides whether it is a lowercase or uppercase letter, number, or space. From there, the appropriate Morse code sequence is outputted by pulsing the vibrating motor.
+
 ```c++
 void loop() 
 {
@@ -134,19 +134,56 @@ void loop()
   }
 }  
 ```
+ [Full Code](https://github.com/anvikav/Anvika_BlueStampPortfolio/blob/main/Project%20Code/morseCodeInitial.ino)
+
+  Later, I realized that Morse code, like Braille, is not an accessible method of communication; as a matter of fact, only 1% of the population can understand Morse code. So, to complete this milestone, I decided to shift gears to a text-to-speech translator and control it entirely with a Raspberry Pi. 
+
+  Unlike the Arduino Micro, a simple microcontroller, the Raspberry Pi is a full-fledged computer with the processing power to convert live text into speech. I used a small Pi camera with a meter-long ribbon cable and earbuds with a headphone jack. 
   
-  Later, I realized that Morse code, like Braille, is not an accessible method of communication; as a matter of fact, only 1% of the population can understand Morse code. So to complete this milestone, I decided to create a text-to-speech translator and control it with a Raspberry Pi. The first step was connecting my Pi to my computer remotely. I encountered a setback in this process when my computer (Mac OS) had trouble connecting to my Pi through a VNC Server and lagged noticeably when connected through a terminal. After 4 days of trying to debug the problem, I decided to reflash the SD card in the Pi and connect it to a monitor.
+  The first step was connecting my Pi to my computer remotely. I encountered a setback when my computer had trouble connecting to my Pi through a VNC Server and lagged noticeably when I would SSH into it. After days of troubleshooting, I decided to reflash my Pi's SD card and connect through a monitor.
   
-  After establishing a strong connection to the Pi, I started working on live text recognition using Python. I soon faced the issue of dealing with blurry photos that the Pi was unable to read. By manually adjusting the focus of the PiCam and going through several rounds of testing, I successfully converted text into speech. 
-  
+  Once I established a strong connection to the Pi, I started working on live text recognition using Python. I soon faced the issue of dealing with blurry photos that the Pi was unable to read. By manually adjusting the focus of the camera and going through several rounds of testing, I successfully converted text into speech. 
+
+<!--<p align="center">
+<img src=" " alt="Text-Speech" width="450"/>
+</p>-->
+
+### Bill of Materials
+<font size="1"> Prices as of August 2023 </font>
+
+| **Part** | **Quantity** | **Note** | **Unit Price** | **Link** |
+|:--:|:--:|:--:|:--:|
+| Raspberry Pi 4 Model B (2 GB) | 1 | Computer | $45.00 | <a href="https://www.sparkfun.com/products/15446?src=raspberrypi"> SparkFun </a> |
+| Micro HDMI to HDMI Cable | 1 | Raspberry Pi-to-Monitor Connection | $4.95 | <a href="https://www.canakit.com/official-micro-hdmi-to-hdmi-cable.html?defpid=4651"> CanaKit </a> |
+| SanDisk 32GB Class 10 MicroSD Card | 1 | Recommended SanDisk Raspberry Pi Class 10 MicroSD Cards | $11.95	| <a href="https://www.canakit.com/raspberry-pi-sd-card-noobs.html"> CanaKit </a> |
+| USB Card Reader Dongle | 1 | Dongle for Writing Card| $2.95 | <a href="https://www.pishop.us/product/usb-2-0-keychain-micro-sd-card-reader/"> PiShop </a> |
+| Raspberry Pi 15W Power Supply | 1 | USB-C Power Adapter Only Compatible with Raspberry Pi 4B. | $8.00 | <a href="https://www.pishop.us/product/raspberry-pi-15w-power-supply-us-white/?src=raspberrypi"> PiShop </a> |
+| Dell Wireless Keyboard and Mouse | 1 | Controlling Raspberry Pi with Monitor| $22.99 | <a href="https://www.dell.com/en-us/shop/dell-wireless-keyboard-and-mouse-km3322w/apd/580-akcw/pc-accessories?gacd=9684992-1102-5761040-266906002-0&dgc=ST&SA360CID=71700000111444217&&gad=1&gclid=Cj0KCQjwoeemBhCfARIsADR2QCtNJDhPG3VlS3W_CHoraPY3sirmL0CxNIjIDA69lD_xslhN6LpRpkUaAoviEALw_wcB&gclsrc=aw.ds"> Dell </a> |
+| Raspberry Pi Camera Module V2 | 1 | Camera | $25.00 | <a href="https://www.sparkfun.com/products/14028?src=raspberrypi"> SparkFun </a> |
+| Flex Cable for Raspberry Pi Camera or Display - 1 meter | 1 | Cable to Connect Camera and Raspberry Pi | $3.95 | <a href="https://www.adafruit.com/product/2143"> Adafruit </a> |
+| Earbuds | 1 | Speech | $9.04 | <a href="https://www.amazon.com/AmazonBasics-Ear-Headphones-Mic-Black/dp/B07HH1QSLB/ref=asc_df_B07HH1QSLB/?tag=hyprod-20&linkCode=df0&hvadid=311990496852&hvpos=&hvnetw=g&hvrand=16437474883593717386&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9004018&hvtargid=pla-625745103730&th=1"> Amazon</a> |
+
+# Jacket Integration  
+
   Finally, I added a battery pack to my starter project:
 
 <p align="center">
-<img src="m23.png" alt="Milestone2" width="450"/>
+<img src="m23.png" alt="BatteryPack" width="450"/>
 </p>
 <p align="center">
-<font size="1"> Anvika. 2023 _First Milestone with Battery_ [Photograph]. </font>
+<font size="1"> Anvika. 2023 Object Detection with Battery [Photograph]. </font>
 </p> 
+
+
+
+
+
+
+
+
+
+
+
 
 ### Schematics Part 2
   Before I started to work on my third milestone, I made a circuit diagram on Tinkercab for the object detection system on the jacket:
@@ -155,12 +192,16 @@ void loop()
 <img src="s2.png" alt="Schematic2" width="450"/>
 </p>
 <p align="center">
-<font size="1"> Anvika. 2023 _Second Milestone Schematics_ [Tinkercad Circuit Diagram]. </font>
+<font size="1"> Anvika. 2023 Second Milestone Schematics [Tinkercad Circuit Diagram]. </font>
 </p> 
 
+<p align="center">
+<img src="m21.png" alt="Milestone2" width="450"/>
+</p>
+<p align="center">
+<font size="1"> Anvika. 2023 Second Milestone [Photograph]. </font>
+</p>
 
-
-# Jacket Integration
 <!-- For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
