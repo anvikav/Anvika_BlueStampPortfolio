@@ -26,15 +26,13 @@ My journey with assistive technology does not end with this project. I'm excited
 
 <p align="center">
 <img src="M1.png" alt="Milestone1" width="450"/>
-</p>
-<p align="center">
 <font size="1"> Anvika V. 2023 First Milestone [Photograph]. </font>
 </p>
 
   The first step of this project was to develop a system that assists visually-impaired individuals navigate space by alerting the user of objects within a 70cm radius with either haptic or auditive feedback. As the object gets closer to the user, the system responds with more frequent vibrating or buzzing; a toggle switch is used to change between the two types of sensory feedback. Additionally, to establish a visual debugging method, the circuit has a 5mm red LED that lights up harmoniously with the sensors. Next, I will expand this by integrating a Raspberry Pi to translate text into Morse code and attaching it to a jacket to make it wearable.
   
 <div align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eLwhJpBoEEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7IKxNl-OvRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 ### Code
@@ -66,7 +64,7 @@ For object detection, I measured the distance  signals from an ultrasonic sensor
 [Full Code](https://github.com/anvikav/Anvika_BlueStampPortfolio/blob/main/Project%20Code/objectDetection.ino)
 
 
-### Schematics Part 1
+### Schematics
 
 <p align="center">
 <img src="S1.png" alt="Schematic1" width="450"/>
@@ -103,7 +101,7 @@ For object detection, I measured the distance  signals from an ultrasonic sensor
   
   The Braille tablets are a huge step in the right direction for assistive technology but I decided I wanted to focus on a modification someone could more readily recreate at home. So instead, I repurposed the vibrating motor from the object detection to convert text into Morse code. 
 
-### Code for Morse Code Translator (Arduino)
+### Code for Morse Code Translator
 
 To translate the text, I modified a program created by Arduino Education. The section below shows how the program deciphers which letter to translate into Morse code. It starts by receiving the user-entered text character by character and then decides whether it is a lowercase or uppercase letter, number, or space. From there, the appropriate Morse code sequence is outputted by pulsing the vibrating motor.
 
@@ -144,6 +142,9 @@ void loop()
   
   Once I established a strong connection to the Pi, I started working on live text recognition using Python. I soon faced the issue of dealing with blurry photos that the Pi was unable to read. By manually adjusting the focus of the camera and going through several rounds of testing, I successfully converted text into speech. 
 
+  For the software portion of the converter, I used the PiTextReader software developed by 
+Russell Grokett
+
 <!--<p align="center">
 <img src=" " alt="Text-Speech" width="450"/>
 </p>-->
@@ -165,28 +166,7 @@ void loop()
 
 # Jacket Integration  
 
-  Finally, I added a battery pack to my starter project:
-
-<p align="center">
-<img src="m23.png" alt="BatteryPack" width="450"/>
-</p>
-<p align="center">
-<font size="1"> Anvika. 2023 Object Detection with Battery [Photograph]. </font>
-</p> 
-
-
-
-
-
-
-
-
-
-
-
-
-### Schematics Part 2
-  Before I started to work on my third milestone, I made a circuit diagram on Tinkercab for the object detection system on the jacket:
+  Before beginning the process of attaching the two systems to the jacket, I made a circuit diagram on Tinkercab for the object detection system on the jacket and quickly breadboarded it:
   
 <p align="center">
 <img src="s2.png" alt="Schematic2" width="450"/>
@@ -202,23 +182,16 @@ void loop()
 <font size="1"> Anvika. 2023 Second Milestone [Photograph]. </font>
 </p>
 
-<!-- For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
 
-Adding to jacket
-Creating two circuits > all soldered and ready to pop in jacket
-Having buzzer at the collar 
-Camera at the hand
-Vibrating motor at the wrist 
-Sparkly? Most individuals with blindness can see very reflective objects, such as things covered in sparkles (85%)
+The final step before stiching the electronics onto the jacket was powering the object detection with a battery pack:
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+<p align="center">
+<img src="m23.png" alt="BatteryPack" width="450"/>
+</p>
+<p align="center">
+<font size="1"> Anvika. 2023 Object Detection with Battery [Photograph]. </font>
+</p> 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
--->
 ### Schematics Part 3
 
 <p align="center">
