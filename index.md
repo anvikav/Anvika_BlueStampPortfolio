@@ -8,7 +8,7 @@ layout: default
 |:--:|:--:|:--:|:--:|
 | Anvika V | Princeton Day School | Computer Engineering | Incoming Senior |
 
-This smart jacket is equipped with an array of sensors that offer intuitive assistance. From built-in object detection to real-time text-speech conversion, it is designed to 
+This smart jacket is equipped with an array of sensors that offer intuitive assistance. From built-in object detection to real-time text-to-speech conversion, it is designed to be multi-functional and offer discrete aid.
 
 My journey with assistive technology does not end with this project. I'm excited to continue my education in engineering. I believe in technology's capacity to mold a more promising tomorrow, and I hope this project serves as an inspiration to other young minds. There are countless ways to expand on my work below and if you find yourself exploring them, reach out to me at anvikavasireddy@gmail.com! 
 
@@ -24,18 +24,18 @@ My journey with assistive technology does not end with this project. I'm excited
   
 # Object Detection
 
-<div align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eLwhJpBoEEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-
 <p align="center">
 <img src="M1.png" alt="Milestone1" width="450"/>
 </p>
 <p align="center">
-######Anvika V. 2023 _First Milestone_ [Photograph]. 
+<font size="1"> Anvika V. 2023 First Milestone [Photograph]. </font>
 </p>
 
-  The first step of this project was to develop a simple system that assists visually-impaired individuals navigate a space. It alerts the user of objects within a 70cm radius with either haptic or auditive feedback (a vibrating motor or buzzer). As the object gets closer to the user, the system responds with more frequent vibrating or buzzing; a toggle switch is used to change between the motor and the buzzer. Additionally, to establish a visual debugging method, the circuit has a 5mm red LED that lights up in harmony with haptic or auditive feedback. Next, I will expand this gadget to make it multi-functional, like adding a Raspberry Pi to translate text into Morse code or attaching it to a jacket to make it a usable garment.
+  The first step of this project was to develop a system that assists visually-impaired individuals navigate space by alerting the user of objects within a 70cm radius with either haptic or auditive feedback. As the object gets closer to the user, the system responds with more frequent vibrating or buzzing; a toggle switch is used to change between the two types of sensory feedback. Additionally, to establish a visual debugging method, the circuit has a 5mm red LED that lights up harmoniously with the sensors. Next, I will expand this by integrating a Raspberry Pi to translate text into Morse code and attaching it to a jacket to make it wearable.
+  
+<div align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eLwhJpBoEEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 ### Schematics Part 1
 
@@ -45,27 +45,18 @@ My journey with assistive technology does not end with this project. I'm excited
 <p align="center">
 <font size="1"> Anvika. 2023 _First Milestone Schematic_ [Tinkercad Circuit Diagram]. </font>
 </p>
+For object detection, I measured the distance  signals from an ultrasonic sensor traveled and converted it into centimeters with the microsecondsToCentimeters() function. The vibrating motor, buzzer, and led would then flicker on and off in response as long as the wave traveled less than 70 cm. The frequency of the pulsing would increase as the object got closer.
+
+[Full Code]
 
 ### Code
 ```c++
-  const int pingTrigPin = 3; //Trigger connected to PIN 3
-  const int pingEchoPin = 2; //Echo connected to PIN 2
-  const int buz = 4; //Buzzer connected to PIN 4
-  
-  void setup() 
-  {
-    Serial.begin(9600);
-    pinMode(buz, OUTPUT);
-    pinMode(pingTrigPin, OUTPUT);
-    pinMode(pingEchoPin, INPUT);
-  }
-  
   void loop()
   {
     long duration, cm; //Variables for wave duration and wave distance   
     digitalWrite(pingTrigPin, LOW); //Confirming that the trigPin is clear   
     delayMicroseconds(2);
-    digitalWrite(pingTrigPin, HIGH); //Generating a wave by setting trigPin to HIGH for 5 minroseconds and then back to low
+    digitalWrite(pingTrigPin, HIGH); //Generating a wave by setting trigPin to HIGH for 5 microseconds and then back to low
     delayMicroseconds(5);
     digitalWrite(pingTrigPin, LOW);
     duration = pulseIn(pingEchoPin, HIGH); //Storing the travel time is variable duration
@@ -78,16 +69,8 @@ My journey with assistive technology does not end with this project. I'm excited
       digitalWrite(buz, LOW); //Turning light off 
       delay(d); //Waiting for a time that corresponds to the variable cm
     }
-    Serial.print(cm);
-    Serial.print("cm");
-    Serial.println();
-    delay(100);
   }
-  
-  long microsecondsToCentimeters(long microseconds)
-  {
-    return microseconds / 29 / 2;
-  }
+ 
 ```
 
 ### Bill of Materials
