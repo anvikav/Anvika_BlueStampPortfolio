@@ -94,6 +94,8 @@ For object detection, I measured the distance  signals from an ultrasonic sensor
 | Male-to-Female Jumper Wires | 1 | Connecting Wires | $2.10 | <a href="https://www.digikey.com/en/products/detail/sparkfun-electronics/PRT-12794/5993859?utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_High%20ROAS%20Categories&utm_term=&utm_content=&gclid=Cj0KCQjwoeemBhCfARIsADR2QCtyZU8zjUzIar3x82ijXdVH7xfaRfGgUX5U579Ti4dJXUiiGk269uQaAoPhEALw_wcB"> DigiKey </a> |
 | Breadboard Jumper Wires | 1 | Connecting Wires | $11.99 | <a href="https://www.amazon.com/AUSTOR-Lengths-Assorted-Preformed-Breadboard/dp/B07CJYSL2T/ref=asc_df_B07CJYSL2T/?tag=hyprod-20&linkCode=df0&hvadid=312209999515&hvpos=&hvnetw=g&hvrand=3356264878582093939&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9004018&hvtargid=pla-569895146522&psc=1"> Amazon </a> | 
 
+* * *
+
 # Text-to-Speech Conversion
 
 <!--<div align="center">
@@ -169,9 +171,11 @@ Russell Grokett.
 | Flex Cable for Raspberry Pi Camera or Display - 1 meter | 1 | Cable to Connect Camera and Raspberry Pi | $3.95 | <a href="https://www.adafruit.com/product/2143"> Adafruit </a> |
 | Earbuds | 1 | Speech | $9.04 | <a href="https://www.amazon.com/AmazonBasics-Ear-Headphones-Mic-Black/dp/B07HH1QSLB/ref=asc_df_B07HH1QSLB/?tag=hyprod-20&linkCode=df0&hvadid=311990496852&hvpos=&hvnetw=g&hvrand=16437474883593717386&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9004018&hvtargid=pla-625745103730&th=1"> Amazon</a> |
 
+* * *
+
 # Jacket Integration  
 
-  Before beginning the process of attaching the two systems to the jacket, I made a circuit diagram on Tinkercad for the object detection system and breadboarded it:
+  Before attaching the two systems to the jacket, I made a circuit diagram on Tinkercad with the object detection adapted for two ultrasonic sensors, buzzers, and vibrating motors:
   
 <p align="center">
 <img src="s2.png" alt="Schematic2" width="450"/>
@@ -197,15 +201,43 @@ The final step before stitching the electronics onto the jacket was powering the
 <font size="1"> Anvika. 2023 Object Detection with Battery [Photograph]. </font>
 </p> 
 
-
-### Schematics Part 3
+To start incorporating the various sensor, I followed a sketched jacket layout and roughly placed the components on top of the jacket. I repurposed an old jacket, but if I were to improve on this project, I would find a waterproof garment with a breathable fabric to avoid overheating.
 
 <p align="center">
 <img src="s3.png" alt="Schematic3" width="450"/>
 </p>
 <p align="center">
-<font size="1"> Anvika. 2023 _Third Milestone Schematics_ [Digital Drawing]. </font>
+<font size="1"> Anvika. 2023 Sketched Jacket Layout [Digital Drawing]. </font>
 </p> 
+
+<p align="center">
+<img src="IMG_7624.jpeg" alt="Schematic3" width="450"/>
+</p>
+<p align="center">
+<font size="1"> Anvika. 2023 Jacket Layout [Digital Drawing]. </font>
+</p> 
+
+### Final Bill of Materials
+<font size="1"> Prices as of August 2023 </font>
+
+| **Part** | **Quantity** | **Note** | **Unit Price** | **Link** |
+|:--:|:--:|:--:|:--:|
+| Jacket | 1 | Project Base | | <a href=""> </a>|
+| Arduino Micro | 1 | Microcontroller | $24.90 | <a href="https://store-usa.arduino.cc/products/arduino-micro?selectedStore=us"> Arduino </a> |
+| Ultrasonic Sensor | 2 | Object Detection | $3.95 | <a href="https://www.digikey.com/en/products/detail/adafruit-industries-llc/3942/9658069?utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_High%20ROAS%20Categories&utm_term=&utm_content=&gclid=Cj0KCQjwoeemBhCfARIsADR2QCvdct9ZQj4tz0uKaFE7A8b9jxVh9Svgka9okB9HelglRaPaI8nZRfUaAtbZEALw_wcB"> Digikey </a> |
+| Vibrating Motor | 2 | Haptic Feedback | $1.90 | <a href="https://www.digikey.com/en/products/detail/seeed-technology-co.,-ltd/316040001/5487672?utm_adgroup=Seeed%20Technology%20Co.%2C%20LTD.&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_DK%2BSupplier_Tier%201%20-%20Block%202&utm_term=&utm_content=Seeed%20Technology%20Co.%2C%20LTD.&gclid=Cj0KCQjwoeemBhCfARIsADR2QCtoECYhEt77AOmON02Ffdc9PCfrDuJbs5MAgV3U6VQzc4a4WhZQ-90aAk4zEALw_wcB"> DigiKey </a> |
+| Buzzer | 2 | Auditive Feedback | $.70 | <a href="https://www.amazon.com/mxuteuk-Electronic-Computers-Printers-Components/dp/B07VK1GJ9X/"> Amazon </a> |
+| 6V Battery Holder with Switch | 1 | Object Detection Power Supply | $3.75 | <a href="https://www.amazon.com/LAMPVPATH-Battery-Holder-Switch-Leads/dp/B07L9M6VZK/ref=sr_1_1?hvadid=174214310303&hvdev=c&hvlocphy=21164&hvnetw=g&hvqmt=e&hvrand=18099385942491578069&hvtargid=kwd-51256821648&hydadcr=24602_9648846&keywords=4+aa+battery+holder+with+switch&qid=1687290908&sr=8-1"> Amazon </a>|
+| Raspberry Pi 4 Model B (2 GB) | 1 | Computer | $45.00 | <a href="https://www.sparkfun.com/products/15446?src=raspberrypi"> SparkFun </a> |
+| SanDisk 32GB Class 10 MicroSD Card | 1 | Recommended SanDisk Raspberry Pi Class 10 MicroSD Cards | $11.95	| <a href="https://www.canakit.com/raspberry-pi-sd-card-noobs.html"> CanaKit </a> |
+| Raspberry Pi Camera Module V2 | 1 | Camera | $25.00 | <a href="https://www.sparkfun.com/products/14028?src=raspberrypi"> SparkFun </a> |
+| Flex Cable for Raspberry Pi Camera or Display - 1 meter | 1 | Cable to Connect Camera and Raspberry Pi | $3.95 | <a href="https://www.adafruit.com/product/2143"> Adafruit </a> |
+| Earbuds | 1 | Speech | $9.04 | <a href="https://www.amazon.com/AmazonBasics-Ear-Headphones-Mic-Black/dp/B07HH1QSLB/ref=asc_df_B07HH1QSLB/?tag=hyprod-20&linkCode=df0&hvadid=311990496852&hvpos=&hvnetw=g&hvrand=16437474883593717386&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9004018&hvtargid=pla-625745103730&th=1"> Amazon</a> |
+| Battery Pack for Raspberry Pi | 1 | Text-to-Speech Translator Power Supply | $25.95 | <a href="https://www.amazon.com/Battery-Raspberry-4000mAh-Adhesive-Micro/dp/B09HXYTDMV/ref=asc_df_B09HXYTDMV/?tag=hyprod-20&linkCode=df0&hvadid=598250021259&hvpos=&hvnetw=g&hvrand=14433305683425786858&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9004018&hvtargid=pla-1686682856560&psc=1"> Amazon </a>|
+| 22 Gauge Silicone Solid Core Wire | 1 | Flexible Connections | $18.99 | <a href="https://www.amazon.com/UPFANS-Silicone-Electric-Tinned-Wrapping/dp/B09995RX8W/ref=sr_1_18?crid=3JP6VHZEF1Z6B&keywords=solid%2Bcore%2Bwire%2B22%2Bawg&qid=1687288098&sprefix=solid%2Bcore%2B%2Caps%2C141&sr=8-18&th=1"> Amazon </a>|
+
+
+
 
 
 
