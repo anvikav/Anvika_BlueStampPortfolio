@@ -87,6 +87,7 @@ For object detection, I measured the distance  signals from an ultrasonic sensor
 | Breadboard | 1 | Intial Circuit Base | $4.95 | <a href="https://www.adafruit.com/product/64"> Adafruit </a> |
 | Male-to-Female Jumper Wires | 1 | Connecting Wires | $2.10 | <a href="https://www.digikey.com/en/products/detail/sparkfun-electronics/PRT-12794/5993859?utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_High%20ROAS%20Categories&utm_term=&utm_content=&gclid=Cj0KCQjwoeemBhCfARIsADR2QCtyZU8zjUzIar3x82ijXdVH7xfaRfGgUX5U579Ti4dJXUiiGk269uQaAoPhEALw_wcB"> DigiKey </a> |
 | Breadboard Jumper Wires | 1 | Connecting Wires | $11.99 | <a href="https://www.amazon.com/AUSTOR-Lengths-Assorted-Preformed-Breadboard/dp/B07CJYSL2T/ref=asc_df_B07CJYSL2T/?tag=hyprod-20&linkCode=df0&hvadid=312209999515&hvpos=&hvnetw=g&hvrand=3356264878582093939&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9004018&hvtargid=pla-569895146522&psc=1"> Amazon </a> | 
+
 <font size="1"> Prices as of August 2023 </font>
 
 
