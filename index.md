@@ -8,7 +8,7 @@ layout: default
 |:--:|:--:|:--:|:--:|
 | Anvika V | Princeton Day School | Computer Engineering | Incoming Senior |
 
-This smart jacket is equipped with an array of sensors that offer intuitive assistance. From built-in object detection to real-time text-to-speech conversion, it is designed to be multi-functional and offer discrete aid.
+This smart jacket is equipped with an array of sensors that offer intuitive assistance. From built-in object detection to real-time text-to-speech conversion, it is designed to be multi-functional and offer discrete aid while navigating a space.
 
 My journey with assistive technology does not end with this project. I'm excited to continue my education in engineering. I believe in technology's capacity to mold a more promising tomorrow, and I hope this project serves as an inspiration to other young minds. There are countless ways to expand on my work below and if you find yourself exploring them, reach out to me at anvikavasireddy@gmail.com! 
 
@@ -17,15 +17,13 @@ My journey with assistive technology does not end with this project. I'm excited
 <p align="center">
 <img src="IMG_7624.jpeg" alt="Headstone Image" width="450"/>
 </p>
-
-<!--<div align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eLwhJpBoEEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>-->
   
 # Object Detection
 
 <p align="center">
 <img src="M1.png" alt="Milestone1" width="450"/>
+</p>
+<p align="center"> 
 <font size="1"> Anvika V. 2023 First Milestone [Photograph]. </font>
 </p>
 
@@ -143,7 +141,7 @@ void loop()
   Once I established a strong connection to the Pi, I started working on live text recognition using Python. I soon faced the issue of dealing with blurry photos that the Pi was unable to read. By manually adjusting the focus of the camera and going through several rounds of testing, I successfully converted text into speech. 
 
   For the software portion of the converter, I used the PiTextReader software developed by 
-Russell Grokett
+Russell Grokett.
 
 <!--<p align="center">
 <img src=" " alt="Text-Speech" width="450"/>
@@ -166,7 +164,7 @@ Russell Grokett
 
 # Jacket Integration  
 
-  Before beginning the process of attaching the two systems to the jacket, I made a circuit diagram on Tinkercab for the object detection system on the jacket and quickly breadboarded it:
+  Before beginning the process of attaching the two systems to the jacket, I made a circuit diagram on Tinkercad for the object detection system and breadboarded it:
   
 <p align="center">
 <img src="s2.png" alt="Schematic2" width="450"/>
@@ -183,7 +181,7 @@ Russell Grokett
 </p>
 
 
-The final step before stiching the electronics onto the jacket was powering the object detection with a battery pack:
+The final step before stitching the electronics onto the jacket was powering the object detection with a battery pack:
 
 <p align="center">
 <img src="m23.png" alt="BatteryPack" width="450"/>
@@ -191,6 +189,7 @@ The final step before stiching the electronics onto the jacket was powering the 
 <p align="center">
 <font size="1"> Anvika. 2023 Object Detection with Battery [Photograph]. </font>
 </p> 
+
 
 ### Schematics Part 3
 
