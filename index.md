@@ -47,7 +47,7 @@ My journey with assistive technology does not end with this project. I'm excited
 </p>
 For object detection, I measured the distance  signals from an ultrasonic sensor traveled and converted it into centimeters with the microsecondsToCentimeters() function. The vibrating motor, buzzer, and led would then flicker on and off in response as long as the wave traveled less than 70 cm. The frequency of the pulsing would increase as the object got closer.
 
-![Full Code](main/Project Code/objectDetection.ino)
+[Full Code](https://github.com/anvikav/Anvika_BlueStampPortfolio/blob/main/Project%20Code/objectDetection.ino)
 
 ### Code
 ```c++
