@@ -43,11 +43,11 @@ My journey with assistive technology does not end with this project. I'm excited
 <img src="S1.png" alt="Schematic1" width="450"/>
 </p>
 <p align="center">
-<font size="1"> Anvika. 2023 _First Milestone Schematic_ [Tinkercad Circuit Diagram]. </font>
+<font size="1"> Anvika. 2023 First Milestone Schematic [Tinkercad Circuit Diagram]. </font>
 </p>
 For object detection, I measured the distance  signals from an ultrasonic sensor traveled and converted it into centimeters with the microsecondsToCentimeters() function. The vibrating motor, buzzer, and led would then flicker on and off in response as long as the wave traveled less than 70 cm. The frequency of the pulsing would increase as the object got closer.
 
-[Full Code]
+![Full Code](objectDetection.ino)
 
 ### Code
 ```c++
@@ -77,17 +77,20 @@ For object detection, I measured the distance  signals from an ultrasonic sensor
 
 | **Part** | **Quantity** | **Note** | **Unit Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Arduino Micro | 1 | Microcontroller | $24.90 | <a href="https://www.digikey.com/en/products/detail/arduino/A000053/4486332?s=N4IgTCBcDaIIwAYCsCC0iBsHUDsAmIAugL5A"> DigiKey </a> |
-| Ultrasonic Sensor | 1 | Object Detection | $9 | <a href="https://www.amazon.com/Smraza-Ultrasonic-Distance-Mounting-Duemilanove/dp/B01JG09DCK/"> Amazon </a> |
-| Vibrating Motor | 1 | Haptic Feedback | $11 | <a href="https://www.amazon.com/tatoko-vibration-Waterproof-8000-16000RPM-toothbrush/dp/B07KYLZC1S/"> Amazon </a> |
-| Buzzer | 1 | Auditive Feedback | $7 | <a href="https://www.amazon.com/mxuteuk-Electronic-Computers-Printers-Components/dp/B07VK1GJ9X/"> Amazon </a> |
-| 5mm Red LED | 1 | Visual Troubleshooting  | $6 | <a href="https://www.amazon.com/Diffused-Lighting-Electronics-Components-Emitting/dp/B01C3ZZT0A/"> Amazon </a> |
-| Slide Switch | 1 | Selecting Haptic of Auditive Feedback  | $6 | <a href="https://www.amazon.com/HiLetgo-SS-12D00-Toggle-Switch-Vertical/dp/B07RTJDW27/"> Amazon </a> |
-| 220Ω Resistor | 1 | Limiting Current to LED | $5.99 | <a href="https://www.amazon.com/MCIGICM-Values-Resistor-Assortment-Resistors/dp/B06WRQS97C/ref=asc_df_B06WRQS97C/?tag=hyprod-20&linkCode=df0&hvadid=312303208923&hvpos=&hvnetw=g&hvrand=2879797771863936635&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9003932&hvtargid=pla-586932991178&psc=1"> Amazon </a> |
-| Breadboard | 1 | Intial Circuit Base | $9.99 | <a href="https://www.amazon.com/EL-CP-003-Breadboard-Solderless-Distribution-Connecting/dp/B01EV6LJ7G/ref=sr_1_11?keywords=solderless+breadboard&qid=1685564152&sr=8-11%20soldering%20kit11Amazonhttps://www.amazon.com/Soldering-Iron-Kit-Temperature-Desoldering/dp/B07S61WT16/ref=sxts_b2b_sx_reorder_acb_business"> Amazon </a> |
-| Jumper Cables | 1 | Connecting Wires | $13.35 | <a href="https://www.amazon.com/QISF-Breadboard-Preformed-Anti-Static-Electronics/dp/B088WNZXFQ/ref=sr_1_6_sspa?crid=3BVYVZGBE5A3Z&keywords=boardboard+with+jumper+wires&qid=1686002634&sprefix=boardboard+with+jumper+wires%2Caps%2C83&sr=8-6-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFOWlRORjRCRUVHQTcmZW5jcnlwdGVkSWQ9QTA5Mjc5NjkxUktLUFAyVVJYRVBGJmVuY3J5cHRlZEFkSWQ9QTA5ODUyMjIyQ0IwTDM3VzIwQkFKJndpZGdldE5hbWU9c3BfbXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="> Amazon </a> |
+| Arduino Micro | 1 | Microcontroller | $24.90 | <a href="https://store-usa.arduino.cc/products/arduino-nano?selectedStore=us"> Arduino Store </a> |
+| Ultrasonic Sensor | 1 | Object Detection | $3.95 | <a href="https://www.digikey.com/en/products/detail/adafruit-industries-llc/3942/9658069?utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_High%20ROAS%20Categories&utm_term=&utm_content=&gclid=Cj0KCQjwoeemBhCfARIsADR2QCvdct9ZQj4tz0uKaFE7A8b9jxVh9Svgka9okB9HelglRaPaI8nZRfUaAtbZEALw_wcB"> Digikey </a> |
+| Vibrating Motor | 1 | Haptic Feedback | $1.90 | <a href="https://www.digikey.com/en/products/detail/seeed-technology-co.,-ltd/316040001/5487672?utm_adgroup=Seeed%20Technology%20Co.%2C%20LTD.&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_DK%2BSupplier_Tier%201%20-%20Block%202&utm_term=&utm_content=Seeed%20Technology%20Co.%2C%20LTD.&gclid=Cj0KCQjwoeemBhCfARIsADR2QCtoECYhEt77AOmON02Ffdc9PCfrDuJbs5MAgV3U6VQzc4a4WhZQ-90aAk4zEALw_wcB"> DigiKey </a> |
+| Buzzer | 1 | Auditive Feedback | $.70 | <a href="https://www.amazon.com/mxuteuk-Electronic-Computers-Printers-Components/dp/B07VK1GJ9X/"> Amazon </a> |
+| 5mm Red LED | 1 | Visual Troubleshooting  | $0.45 | <a href="https://www.sparkfun.com/products/9590"> SparkFun </a> |
+| Slide Switch | 1 | Selecting Haptic of Auditive Feedback  | $0.27 | <a href="https://www.amazon.com/HiLetgo-SS-12D00-Toggle-Switch-Vertical/dp/B07RTJDW27/"> Amazon </a> |
+| 220Ω Resistor | 1 | Limiting Current to LED | $0.44 | <a href="https://www.mcmaster.com/1348N356/"> McMaster-Carr </a> |
+| Breadboard | 1 | Intial Circuit Base | $4.95 | <a href="https://www.adafruit.com/product/64"> Adafruit </a> |
+| Male-to-Female Jumper Wires | 1 | Connecting Wires | $2.10 | <a href="https://www.digikey.com/en/products/detail/sparkfun-electronics/PRT-12794/5993859?utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_High%20ROAS%20Categories&utm_term=&utm_content=&gclid=Cj0KCQjwoeemBhCfARIsADR2QCtyZU8zjUzIar3x82ijXdVH7xfaRfGgUX5U579Ti4dJXUiiGk269uQaAoPhEALw_wcB"> DigiKey </a> |
+| Breadboard Jumper Wires | 1 | Connecting Wires | $11.99 | <a href="https://www.amazon.com/AUSTOR-Lengths-Assorted-Preformed-Breadboard/dp/B07CJYSL2T/ref=asc_df_B07CJYSL2T/?tag=hyprod-20&linkCode=df0&hvadid=312209999515&hvpos=&hvnetw=g&hvrand=3356264878582093939&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9004018&hvtargid=pla-569895146522&psc=1"> Amazon </a> | 
 
-# Text to Speech Conversion
+<font size="1"> Prices as of August 2023 </font>
+
+# Text-to-Speech Conversion
 
 <div align="center">
 <iframe width="560" height="315" src="[https://www.youtube.com/embed/y3VAmNlER5Y](https://prezi.com/v/view/DcSKiovgZVgT32lMbmLB/)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
