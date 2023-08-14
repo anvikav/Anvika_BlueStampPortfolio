@@ -8,7 +8,11 @@ layout: default
 |:--:|:--:|:--:|:--:|
 | Anvika V | Princeton Day School | Computer Engineering | Incoming Senior |
 
-Hello! My name is Anvika and I am a rising high school senior interested in computer engineering! This summer I developed an assistive smart jacket to help the visually impaired community. My journey with assistive technology started with developing an object detection system that offers users sensory feedback about their surroundings. I have since turned that project into a jacket that discretely aids the user navigate a room. There are countless ways to expand on my work and if you find yourself exploring them, reach out to me at anvikavasireddy@gmail.com!
+Hello! My name is Anvika and I am a rising high school senior interested in computer engineering! This summer I developed an assistive smart jacket to help the visually impaired community. 
+
+My journey with assistive technology started by developing an object detection system that offers users sensory feedback about their surroundings. I have since turned that project into a jacket that discretely aids the user navigate a room. 
+
+There are countless ways to expand on my work and if you find yourself exploring them, reach out to me at anvikavasireddy@gmail.com!
 
 <!--This smart jacket is equipped with an array of sensors that offer intuitive assistance. From built-in object detection to real-time text-to-speech conversion, it is designed to be multi-functional and offer discrete aid while navigating a space.-->
 
