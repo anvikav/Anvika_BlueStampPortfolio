@@ -12,6 +12,13 @@ Hello! My name is Anvika and I am a rising high school senior interested in comp
 
 <!--This smart jacket is equipped with an array of sensors that offer intuitive assistance. From built-in object detection to real-time text-to-speech conversion, it is designed to be multi-functional and offer discrete aid while navigating a space.-->
 
+<p align="center">
+<img src="jacket.png" alt="Jacket" width="450"/>
+</p>
+<p align="center"> 
+<font size="1"> Anvika V. 2023 Smart Jacket [Photograph]. </font>
+</p>
+
 * * *
   
 # Object Detection
