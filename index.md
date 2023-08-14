@@ -31,7 +31,7 @@ There are countless ways to expand on my work and if you find yourself exploring
 <img src="M1.png" alt="Milestone1" width="450"/>
 </p>
 <p align="center"> 
-<font size="1"> Anvika V. 2023 First Milestone [Photograph]. </font>
+<font size="1"> Anvika V. 2023 Object Detection Breadboard [Photograph]. </font>
 </p>
 
   The first step of this project was to develop a system that assists visually-impaired individuals navigate space by alerting the user of objects within a 70cm radius with either haptic or auditive feedback. As the object gets closer to the user, the system responds with more frequent vibrating or buzzing; a toggle switch is used to change between the two types of sensory feedback. Additionally, to establish a visual debugging method, the circuit has a 5mm red LED that lights up harmoniously with the sensors. Next, I will expand this by integrating a Raspberry Pi to translate text into Morse code and attaching it to a jacket to make it wearable.
@@ -75,7 +75,7 @@ For object detection, I measured the distance  signals from an ultrasonic sensor
 <img src="S1.png" alt="Schematic1" width="450"/>
 </p>
 <p align="center">
-<font size="1"> Anvika. 2023 First Milestone Schematic [Tinkercad Circuit Diagram]. </font>
+<font size="1"> Anvika. 2023 Object Detection Schematic [Tinkercad Circuit Diagram]. </font>
 </p>
 
 ### Bill of Materials
@@ -181,14 +181,14 @@ Russell Grokett.
 <img src="s2.png" alt="Schematic2" width="450"/>
 </p>
 <p align="center">
-<font size="1"> Anvika. 2023 Second Milestone Schematics [Tinkercad Circuit Diagram]. </font>
+<font size="1"> Anvika. 2023 Adapted Object Detection Schematic [Tinkercad Circuit Diagram]. </font>
 </p> 
 
 <p align="center">
 <img src="m21.png" alt="Milestone2" width="450"/>
 </p>
 <p align="center">
-<font size="1"> Anvika. 2023 Second Milestone [Photograph]. </font>
+<font size="1"> Anvika. 2023 Adapted Object Detection Breadboard [Photograph]. </font>
 </p>
 
 
